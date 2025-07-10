@@ -3,224 +3,344 @@ entries:
   cpd-platform:
   - apiVersion: v2
     appVersion: 5.2.0
-    created: "2025-03-13T11:05:32.924087732-07:00"
+    created: "2025-06-12T09:41:34.765183175-07:00"
     description: A Helm chart for Kubernetes
-    digest: 471ad0ca26c1ce192f4cc05d25d080d3d22d4dc3f877717326f1100f419b7e43
+    digest: aff60dd61241863725ae724e33045043ae193f9d277c185e81adbe82ca48b74d
     name: cpd-platform
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/cpd-platform-5.2.0+20250302.185408.38.tgz
-    version: 5.2.0+20250302.185408.38
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/cpd-platform-5.2.0+20250516.013559.108.tgz
+    version: 5.2.0+20250516.013559.108
   cpd-platform-cluster-scoped:
   - apiVersion: v2
     appVersion: 5.2.0
-    created: "2025-03-13T11:05:32.924360132-07:00"
+    created: "2025-06-12T09:41:34.765715855-07:00"
     description: A Helm chart for Kubernetes
-    digest: bd0df202f4577df3cbe2931da4b47be5da13f0e6e5a639ae110d9d45c8c7ee32
+    digest: cf242be3c0bc8df4454e08509c98f8e3d4901b550b6d9318c25cfaaa3840cf26
     name: cpd-platform-cluster-scoped
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/cpd-platform-cluster-scoped-5.2.0+20250302.185408.38.tgz
-    version: 5.2.0+20250302.185408.38
-  ibm-common-service-operator:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/cpd-platform-cluster-scoped-5.2.0+20250516.013559.108.tgz
+    version: 5.2.0+20250516.013559.108
+  cpd-platform-migration:
   - apiVersion: v2
-    appVersion: 4.12.0
-    created: "2025-03-13T11:05:32.924674953-07:00"
-    description: A Helm chart for ibm-common-service-operator
-    digest: 96d14b5dcd764f924b1b35ec0e1fa5f04a8be3c1be6c04fc5cdeb0d07b29e4f6
+    appVersion: 0.0.0
+    created: "2025-06-12T09:41:34.766197226-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 5403891ecc3a4ac13d3524928e5df51ab9c12231e9cf65d22b669666d9d2d892
+    name: cpd-platform-migration
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/cpd-platform-migration-0.0.0.tgz
+    version: 0.0.0
+  ibm-cert-manager-operator:
+  - apiVersion: v2
+    appVersion: 4.2.16
+    created: "2025-06-12T09:41:34.766609228-07:00"
+    description: A Helm chart for ibm-cert-manager-operator
+    digest: 4ca3d5f44b0a0aa79c84815ded0de37e725218e0294f4e68fe0103abb9dee5de
+    name: ibm-cert-manager-operator
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-cert-manager-operator-4.2.16+20250528.101036.0.tgz
+    version: 4.2.16+20250528.101036.0
+  ibm-cert-manager-operator-cluster-scoped:
+  - apiVersion: v2
+    appVersion: 4.2.16
+    created: "2025-06-12T09:41:34.769593274-07:00"
+    description: A Helm chart for ibm-cert-manager-operator
+    digest: ea8458715dd8056418f55162826a93d9fd351ac8add8173fd4b8b711231b1379
+    name: ibm-cert-manager-operator-cluster-scoped
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-cert-manager-operator-cluster-scoped-4.2.16+20250528.101036.0.tgz
+    version: 4.2.16+20250528.101036.0
+  ibm-common-service-operator:
+  - annotations:
+      operator-1: ibm-common-service-operator
+      operator-2: ibm-odlm
+      versionOperator-1: 4.13.0
+      versionOperator-2: 4.5.1
+    apiVersion: v2
+    appVersion: 4.13.0
+    created: "2025-06-12T09:41:34.770217861-07:00"
+    description: A Helm chart for ibm-common-service-operator and ibm-odlm namespace
+      scoped resources
+    digest: 2957f7caad4a729a9c17cb21c7ba558b60db396f26e77100e40ef7b8d85a2eec
     name: ibm-common-service-operator
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-common-service-operator-4.12.0+20250307.205212.0.tgz
-    version: 4.12.0+20250307.205212.0
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-common-service-operator-4.13.0+20250527.133754.0.tgz
+    version: 4.13.0+20250527.133754.0
   ibm-common-service-operator-cluster-scoped:
-  - apiVersion: v2
-    appVersion: 4.12.0
-    created: "2025-03-13T11:05:32.925267777-07:00"
-    description: A Helm chart for ibm-common-service-operator
-    digest: 1e0ce6c29737de663d2e956e363adcacced41911e38646e7d1ace18c7824d757
+  - annotations:
+      operator-1: ibm-common-service-operator
+      operator-2: ibm-odlm
+      versionOperator-1: 4.13.0
+      versionOperator-2: 4.5.1
+    apiVersion: v2
+    appVersion: 4.13.0
+    created: "2025-06-12T09:41:34.771701642-07:00"
+    description: A Helm chart for ibm-common-service-operator and ibm-odlm cluster
+      scoped resources
+    digest: c1c641fcbed06371fde34e73fa8e40ad54f58c7a5830d146a1fc2075b170576a
     name: ibm-common-service-operator-cluster-scoped
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-common-service-operator-cluster-scoped-4.12.0+20250307.205212.0.tgz
-    version: 4.12.0+20250307.205212.0
-  ibm-commonui-operator-app:
-  - apiVersion: v2
-    appVersion: 4.8.0
-    created: "2025-03-13T11:05:32.925683264-07:00"
-    description: A Helm chart for ibm-commonui-operator-app
-    digest: ffdbacc4d6b84720f5dd4b520cfa5d28e844e61b2a06bf626f1ec0a7819a2b20
-    name: ibm-commonui-operator-app
-    type: application
-    urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-commonui-operator-app-4.8.0+20250306.114122.0.tgz
-    version: 4.8.0+20250306.114122.0
-  ibm-commonui-operator-app-cluster-scoped:
-  - apiVersion: v2
-    appVersion: 4.8.0
-    created: "2025-03-13T11:05:32.926197267-07:00"
-    description: A Helm chart for ibm-commonui-operator-app cluster scoped resources
-    digest: a8de7c321b75ed5ab014030b8484a0c8a00b2bcc7c4de4dbc5bbcd162c9c771f
-    name: ibm-commonui-operator-app-cluster-scoped
-    type: application
-    urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-commonui-operator-app-cluster-scoped-4.8.0+20250306.114122.0.tgz
-    version: 4.8.0+20250306.114122.0
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-common-service-operator-cluster-scoped-4.13.0+20250527.133754.0.tgz
+    version: 4.13.0+20250527.133754.0
   ibm-iam-operator:
-  - apiVersion: v2
-    appVersion: 4.11.0
-    created: "2025-03-13T11:05:32.926763913-07:00"
-    description: IBM IAM Operator
-    digest: 59c65cbb6a9caf33d1178681fa082610e17c11290cc1ef3c4f23b986701c6afe
+  - annotations:
+      operator-1: ibm-iam-operator
+      operator-2: ibm-commonui-operator-app
+      versionOperator-1: 4.12.0
+      versionOperator-2: 4.9.0
+    apiVersion: v2
+    appVersion: 4.12.0
+    created: "2025-06-12T09:41:34.77236083-07:00"
+    description: A Helm chart for ibm-iam-operator and ibm-commonui-operator namespace
+      scoped resources
+    digest: 3b698f8135ed02b4793195458a3b54d9a0c57453cc303554a9da636582e2ef6e
     name: ibm-iam-operator
     sources:
     - https://github.com/IBM/ibm-iam-operator/
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-iam-operator-4.11.0+20250307.114037.0.tgz
-    version: 4.11.0+20250307.114037.0
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-iam-operator-4.12.0+20250527.133754.0.tgz
+    version: 4.12.0+20250527.133754.0
   ibm-iam-operator-cluster-scoped:
-  - apiVersion: v2
-    appVersion: 4.11.0
-    created: "2025-03-13T11:05:32.927063997-07:00"
-    description: Cluster-scoped Resources for IBM IAM Operator
-    digest: fa86a4792034009e47aabbae8c67d913d47fa5d2aae46f26fd056bd7e110e4c6
+  - annotations:
+      operator-1: ibm-iam-operator
+      operator-2: ibm-commonui-operator-app
+      versionOperator-1: 4.12.0
+      versionOperator-2: 4.9.0
+    apiVersion: v2
+    appVersion: 4.12.0
+    created: "2025-06-12T09:41:34.772813158-07:00"
+    description: A Helm chart for ibm-iam-operator and ibm-commonui-operator cluster
+      scoped resources
+    digest: ff40332398ad1ba4a89a642534eb98835c8e57e94c111e43a475e2ad4425abfb
     name: ibm-iam-operator-cluster-scoped
     sources:
     - https://github.com/IBM/ibm-iam-operator/
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-iam-operator-cluster-scoped-4.11.0+20250307.114037.0.tgz
-    version: 4.11.0+20250307.114037.0
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-iam-operator-cluster-scoped-4.12.0+20250527.133754.0.tgz
+    version: 4.12.0+20250527.133754.0
+  ibm-license-service:
+  - apiVersion: v2
+    created: "2025-06-12T09:41:34.773448728-07:00"
+    description: A Helm chart for IBM License Service ArgoCD installation
+    digest: bb6c471ceb689de90abe4c810e8622242a9846d76817c540570f6c3e07676443
+    name: ibm-license-service
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-license-service-4.2.16+20250528.101036.0.tgz
+    version: 4.2.16+20250528.101036.0
+  - apiVersion: v2
+    created: "2025-06-12T09:41:34.773120952-07:00"
+    description: A Helm chart for IBM License Service ArgoCD installation
+    digest: 22dc12202e95c2df33ac5a140959dcd393d62df1fdefdaafeeb61f403bb93ec0
+    name: ibm-license-service
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-license-service-4.2.15+20250506.101113.0.tgz
+    version: 4.2.15+20250506.101113.0
+  ibm-license-service-cluster-scoped:
+  - apiVersion: v2
+    created: "2025-06-12T09:41:34.774583599-07:00"
+    description: A Helm chart for IBM License Service ArgoCD installation (cluster
+      scoped)
+    digest: 3a9830c1b2fc0c32d12b9c55f5c82483e176c86fcc25e40e759edea88ae29ef5
+    name: ibm-license-service-cluster-scoped
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-license-service-cluster-scoped-4.2.16+20250528.101036.0.tgz
+    version: 4.2.16+20250528.101036.0
+  - apiVersion: v2
+    created: "2025-06-12T09:41:34.77402097-07:00"
+    description: A Helm chart for IBM License Service ArgoCD installation (cluster
+      scoped)
+    digest: 8ea67348484fb017d8cd5b8281979af964ed1b7f7e51fdd576a3f75428f02f9e
+    name: ibm-license-service-cluster-scoped
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-license-service-cluster-scoped-4.2.15+20250506.101113.0.tgz
+    version: 4.2.15+20250506.101113.0
+  ibm-licensing-cluster-scoped:
+  - apiVersion: v2
+    created: "2025-06-12T09:41:34.775569069-07:00"
+    description: A Helm chart for IBM License Service installation
+    digest: 6211084338421a73d74f81f2737a34a8c853801208c91f7c1796b169f2114a9a
+    name: ibm-licensing-cluster-scoped
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-licensing-cluster-scoped-4.2.16+20250604.153216.0.tgz
+    version: 4.2.16+20250604.153216.0
   ibm-namespace-scope-operator:
   - apiVersion: v2
-    appVersion: 4.2.13
-    created: "2025-03-13T11:05:32.927540231-07:00"
+    appVersion: 4.3.0
+    created: "2025-06-12T09:41:34.776551838-07:00"
     description: Helm chart for ibm-namespace-scope-operator
-    digest: 0759901e8046144793ec13b42bf567114a10bf636dd85a8d5dd122ebfc1762ad
+    digest: 2de170e591d537855d45ff10fbce9a2a862c6f5be2506d60828b2061b049913c
     name: ibm-namespace-scope-operator
     sources:
     - https://github.com/IBM/ibm-namespace-scope-operator
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-namespace-scope-operator-4.2.13+20250227.220734.0.tgz
-    version: 4.2.13+20250227.220734.0
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-namespace-scope-operator-4.3.0+20250527.133754.0.tgz
+    version: 4.3.0+20250527.133754.0
+  - apiVersion: v2
+    appVersion: 4.2.16
+    created: "2025-06-12T09:41:34.7762254-07:00"
+    description: Helm chart for ibm-namespace-scope-operator
+    digest: 24a25cdbb8885154e3bd5afca2e2705ba8205d794ff3a6f071c9226500e44d36
+    name: ibm-namespace-scope-operator
+    sources:
+    - https://github.com/IBM/ibm-namespace-scope-operator
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-namespace-scope-operator-4.2.16+20250528.101036.0.tgz
+    version: 4.2.16+20250528.101036.0
   ibm-namespace-scope-operator-cluster-scoped:
   - apiVersion: v2
-    appVersion: 4.2.13
-    created: "2025-03-13T11:05:32.927825609-07:00"
+    appVersion: 4.3.0
+    created: "2025-06-12T09:41:34.777134154-07:00"
     description: Helm chart for ibm-namespace-scope-operator
-    digest: acc73e98dbe456ce231dffe2a07027064186a6e667af5aabf255b5ce8b3d2880
+    digest: 1a327bb21e13328e9298581914aa0c0a4b6970419e23b4a6bd64788c85f6bd2d
     name: ibm-namespace-scope-operator-cluster-scoped
     sources:
     - https://github.com/IBM/ibm-namespace-scope-operator
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-namespace-scope-operator-cluster-scoped-4.2.13+20250227.220734.0.tgz
-    version: 4.2.13+20250227.220734.0
-  ibm-odlm:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-namespace-scope-operator-cluster-scoped-4.3.0+20250527.133754.0.tgz
+    version: 4.3.0+20250527.133754.0
   - apiVersion: v2
-    appVersion: 4.5.0
-    created: "2025-03-13T11:05:32.928195821-07:00"
-    description: A Helm chart for ibm-odlm
-    digest: 6135b6c9ffe3a8d17d0453ee4a3f5ad3472f446234106c3d7f0dfe60e01b3c7d
-    name: ibm-odlm
+    appVersion: 4.2.16
+    created: "2025-06-12T09:41:34.776873683-07:00"
+    description: Helm chart for ibm-namespace-scope-operator
+    digest: 5d4ddc54a5bcea1d6424daa21388973bce71e1788ed4eecbfe7eaf13ef83b897
+    name: ibm-namespace-scope-operator-cluster-scoped
+    sources:
+    - https://github.com/IBM/ibm-namespace-scope-operator
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-odlm-4.5.0+20250304.114101.0.tgz
-    version: 4.5.0+20250304.114101.0
-  ibm-odlm-cluster-scoped:
-  - apiVersion: v2
-    appVersion: 4.5.0
-    created: "2025-03-13T11:05:32.929506048-07:00"
-    description: A Helm chart for ibm-odlm
-    digest: 10eaeca67ec0dc969e7857caff1e32fde11fc070e1d86870e82213ab3f47c8b5
-    name: ibm-odlm-cluster-scoped
-    type: application
-    urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/ibm-odlm-cluster-scoped-4.5.0+20250304.114101.0.tgz
-    version: 4.5.0+20250304.114101.0
-  planning_analytics:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/ibm-namespace-scope-operator-cluster-scoped-4.2.16+20250528.101036.0.tgz
+    version: 4.2.16+20250528.101036.0
+  planning-analytics:
   - apiVersion: v2
     appVersion: 5.2.0
-    created: "2025-03-13T11:05:32.930041636-07:00"
+    created: "2025-06-12T09:41:34.777567801-07:00"
     description: A Helm chart for IBM Planning Analytics
-    digest: bba1a596efedd925e136c6a22e2c463b8640851e8d0e4b95df6a805f7f88d16c
-    name: planning_analytics
+    digest: 5afb1de73b96442db9ded433dbabbf05b2e72b6a5b15483a945fbec17a6a408b
+    name: planning-analytics
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/planning_analytics-5.2.0+20250313.111711.14.tgz
-    version: 5.2.0+20250313.111711.14
-  planning_analytics-cluster-scoped:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/planning-analytics-5.2.0+20250604.210250.1608.tgz
+    version: 5.2.0+20250604.210250.1608
+  planning-analytics-cluster-scoped:
   - apiVersion: v2
     appVersion: 5.2.0
-    created: "2025-03-13T11:05:32.930414714-07:00"
+    created: "2025-06-12T09:41:34.778058029-07:00"
     description: A Helm chart for Cluster Scoped objects for planning_analytics
-    digest: 5d6c604dc508ecff188f51794654116569be07f30c1103032cbeacbcb1de8c69
-    name: planning_analytics-cluster-scoped
+    digest: 2682faa724235b848b7a5490a61299c21bd2ec01d9799040a3fee3787f23340c
+    name: planning-analytics-cluster-scoped
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/planning_analytics-cluster-scoped-5.2.0+20250313.111711.14.tgz
-    version: 5.2.0+20250313.111711.14
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/planning-analytics-cluster-scoped-5.2.0+20250604.210250.1608.tgz
+    version: 5.2.0+20250604.210250.1608
+  planning-analytics-instance:
+  - apiVersion: v2
+    appVersion: 5.2.0
+    created: "2025-06-12T09:41:34.778429984-07:00"
+    description: A Helm chart for IBM Planning Analytics
+    digest: 9a2e524faa267eeadc8316c8f7996dd84d0305a46fbb81bf8f3a0d50813508e9
+    name: planning-analytics-instance
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/planning-analytics-instance-5.2.0+20250604.210250.1608.tgz
+    version: 5.2.0+20250604.210250.1608
+  planning-analytics-instance-migration:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2025-06-12T09:41:34.778702892-07:00"
+    description: A Helm chart for IBM Planning Analytics
+    digest: a8d47221ffccb2b8c3fbf65c814e65f3b89a5a09910d1569c0a8e7535b5e7060
+    name: planning-analytics-instance-migration
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/planning-analytics-instance-migration-0.0.0.tgz
+    version: 0.0.0
   platform-config:
   - apiVersion: v2
-    appVersion: 5.2.0+20250310.084435.2
-    created: "2025-03-13T11:05:32.931150329-07:00"
+    appVersion: 5.2.0
+    created: "2025-06-12T09:41:34.779069533-07:00"
     description: A Helm chart for Kubernetes
-    digest: b607fc8d70888494969098cc4bb42827ebad26fc64eab0f828e11a79ec5082bb
+    digest: 0d23c7e7d24de42076237e485c1621b1a644c02397d9f31fe60b8eaebdf7360d
     name: platform-config
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/platform-config-5.2.0+20250310.084435.2.tgz
-    version: 5.2.0+20250310.084435.2
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/platform-config-5.2.0+20250402.154803.5.tgz
+    version: 5.2.0+20250402.154803.5
   postgresql:
   - apiVersion: v2
-    appVersion: 1.25.0
-    created: "2025-03-13T11:05:32.933212702-07:00"
+    appVersion: 1.25.1
+    created: "2025-06-12T09:41:34.781370677-07:00"
     description: EDB Postgres for Kubernetes Helm Chart
-    digest: aa44792e2ce9bd09461597f03d9127cf502d50769bebf3597c9d4d8d588c2583
+    digest: 95a24af2c04063b04530d41b2df332df795ec2be55f0a83c908edd84d281f6e0
     icon: https://www.enterprisedb.com/themes/custom/edb_bootstrap_sass/edb-logo-disc-dark-2.svg
     name: postgresql
     sources:
     - https://github.com/EnterpriseDB/edb-postgres-for-kubernetes-charts
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/postgresql-4.33.0+20250307.124001.7.tgz
-    version: 4.33.0+20250307.124001.7
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/postgresql-5.16.0+20250422.134042.20.tgz
+    version: 5.16.0+20250422.134042.20
   postgresql-cluster-scoped:
   - apiVersion: v2
-    appVersion: 1.25.0
-    created: "2025-03-13T11:05:32.941022056-07:00"
+    appVersion: 1.25.1
+    created: "2025-06-12T09:41:34.789373175-07:00"
     description: A Helm chart for Postgresql Cluster Scope
-    digest: e097aa0671f506cfbb3c5be00a58b34c2feef63fa38e7d56c49af5aa3459ba9b
+    digest: 1d1b8d546f3b9e3f3f846da93bc81f751e687163d7147a818a0f4b010cedfb9a
     icon: https://www.enterprisedb.com/themes/custom/edb_bootstrap_sass/edb-logo-disc-dark-2.svg
     name: postgresql-cluster-scoped
     sources:
     - https://github.com/EnterpriseDB/edb-postgres-for-kubernetes-charts
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/postgresql-cluster-scoped-4.33.0+20250307.124001.7.tgz
-    version: 4.33.0+20250307.124001.7
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/postgresql-cluster-scoped-5.16.0+20250422.134042.20.tgz
+    version: 5.16.0+20250422.134042.20
   zen:
   - apiVersion: v2
     appVersion: 6.2.0
-    created: "2025-03-13T11:05:32.941555502-07:00"
+    created: "2025-06-12T09:41:34.790083473-07:00"
     description: A Helm chart for Kubernetes
-    digest: 2e3e8b87b7ce92ff8b88b0835b672b819206ab3efb57139688f4e77cdcaae236
+    digest: 7b2680e150110cf2081386a95b891419a8cdc813bc1773df27895345f23da1f4
     name: zen
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/zen-6.2.0+20250308.171113.91.tgz
-    version: 6.2.0+20250308.171113.91
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/zen-6.2.0+20250530.152516.232.tgz
+    version: 6.2.0+20250530.152516.232
   zen-cluster-scoped:
   - apiVersion: v2
     appVersion: 6.2.0
-    created: "2025-03-13T11:05:32.9418342-07:00"
+    created: "2025-06-12T09:41:34.790412449-07:00"
     description: A Helm chart for Kubernetes
-    digest: fe048f1d3a8c6752d0ea51d063ae2909210321ee7810acae083ea0b1ee9534e9
+    digest: 5e2347b8dede9a166f2cd5a73bf17a568ec185aaf6d052ca5667bf398d81ef09
     name: zen-cluster-scoped
     type: application
     urls:
-    - https://raw.github.com/IBM/swhub-charts/poc/5.2.0/zen-cluster-scoped-6.2.0+20250308.171113.91.tgz
-    version: 6.2.0+20250308.171113.91
-generated: "2025-03-13T11:05:32.923000855-07:00"
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/zen-cluster-scoped-6.2.0+20250530.152516.232.tgz
+    version: 6.2.0+20250530.152516.232
+  zen-migration:
+  - apiVersion: v2
+    appVersion: 0.0.0
+    created: "2025-06-12T09:41:34.790792289-07:00"
+    description: A Helm chart for Kubernetes
+    digest: a6ca45e94e0c020b2fccbe4045f386264dc92b841ffbebfa8bbd874ba552c23c
+    name: zen-migration
+    type: application
+    urls:
+    - https://raw.github.ibm.com/IBMSoftwareHub/charts/5.2.0/promoted/zen-migration-0.0.0.tgz
+    version: 0.0.0
+generated: "2025-06-12T09:41:34.76411235-07:00"
